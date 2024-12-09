@@ -1,6 +1,6 @@
 async function adminAuth(req,res,next){
       const { role } = req.body; 
-     if(role.contain("admin")){
+     if(role.includes("admin")){
         next()
      }
 }
